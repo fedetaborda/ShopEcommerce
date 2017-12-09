@@ -3,12 +3,13 @@ import { RouterModule, Routes } from '@angular/router';
 import { InicioComponent } from "./components/inicio/inicio.component";
 import { BarraLateralComponent } from './components/barra-lateral/barra-lateral.component';
 import { UserComponent } from './components/user/user.component';
+import { ListProductosComponent } from './components/list-productos/list-productos.component';
 
 
 const APP_ROUTES: Routes = [
   { path: 'inicio', component: InicioComponent },
   { path: 'users', component: UserComponent },
-  { path: 'lateral', component: BarraLateralComponent },
+  { path: 'list-productos', component: ListProductosComponent },
   { path: '**', pathMatch: 'full', redirectTo: 'inicio' }
 ];
 

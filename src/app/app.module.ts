@@ -14,6 +14,9 @@ import { UserComponent } from './components/user/user.component';
 
 //service
 import { ProductosService } from './services/productos.service';
+import { ListProductosComponent } from './components/list-productos/list-productos.component';
+import { HeaderComponent } from './components/header/header.component';
+import { NavComponent } from './components/nav/nav.component';
 
 
 @NgModule({
@@ -21,7 +24,10 @@ import { ProductosService } from './services/productos.service';
     AppComponent,
     InicioComponent,
     BarraLateralComponent,
-    UserComponent
+    UserComponent,
+    ListProductosComponent,
+    HeaderComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,
