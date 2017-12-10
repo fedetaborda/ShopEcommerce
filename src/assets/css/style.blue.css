@@ -63,6 +63,26 @@ table {
   color: #666;
 }
 
+.table .img-table{
+  width: 80px;
+  height: 80px;
+}
+.table > tbody > tr > td{
+  vertical-align: middle;
+}
+
+.card{
+    padding: 34px;
+}
+
+.card .card-title{
+  margin: 15px 5px;
+}
+
+.card-small{
+  margin-bottom: 10px;
+}
+
 .card-close {
   position: absolute;
   top: 15px;

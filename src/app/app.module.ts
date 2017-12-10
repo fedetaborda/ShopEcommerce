@@ -1,5 +1,4 @@
 import { BrowserModule } from '@angular/platform-browser';
-
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
@@ -17,6 +16,7 @@ import { ProductosService } from './services/productos.service';
 import { ListProductosComponent } from './components/list-productos/list-productos.component';
 import { HeaderComponent } from './components/header/header.component';
 import { NavComponent } from './components/nav/nav.component';
+import { DetalleProductoComponent } from './components/detalle-producto/detalle-producto.component';
 
 
 @NgModule({
@@ -27,7 +27,8 @@ import { NavComponent } from './components/nav/nav.component';
     UserComponent,
     ListProductosComponent,
     HeaderComponent,
-    NavComponent
+    NavComponent,
+    DetalleProductoComponent
   ],
   imports: [
     BrowserModule,

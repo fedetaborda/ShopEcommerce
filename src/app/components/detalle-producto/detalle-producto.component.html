@@ -1,3 +1,4 @@
+
 <div class="page home-page">
       <!-- Main Navbar-->
       <app-header></app-header>
@@ -10,7 +11,7 @@
           <!-- Page Header-->
           <header class="page-header">
             <div class="container-fluid">
-              <h2 class="no-margin-bottom">Listado de Articulos</h2>
+              <h2 class="no-margin-bottom">Detalle del Articulos</h2>
             </div>
           </header>
           <!-- Dashboard Counts Section-->
@@ -20,7 +21,7 @@
                 <!-- Item -->
                 <div class="col-xl-3 col-sm-6">
                   <div class="item d-flex align-items-center">
-                    <div class="icon bg-violet"><i class="fa fa-eye" aria-hidden="true"></i></div>
+                    <div class="icon bg-violet"><i class="icon-user"></i></div>
                     <div class="title"><span>New<br>Clients</span>
                       <div class="progress">
                         <div role="progressbar" style="width: 25%; height: 4px;" aria-valuenow="{#val.value}" aria-valuemin="0" aria-valuemax="100" class="progress-bar bg-violet"></div>
@@ -72,43 +73,25 @@
           <!-- Client Section-->
           <section class="dashboard-counts">
             <div class="container-fluid">
-              <div class="row bg-white has-shadow">
-                <!-- Client Profile -->
-                <div class="col-lg-12">
-                  <table class="table">
-                      <thead class="thead-inverse">
-                        <tr>
-                          <th>#</th>
-                          <th>image</th>
-                          <th>Producto</th>
-                          <th>Marca</th>
-                          <th>Precio</th>
-                          <th>Stock</th>
-                          <th>Ventas</th>
-                          <th></th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr *ngFor="let producto of productos let i = index">
-                          <td class="td-top">{{i+1}}</td>
-                          <td><img src="{{ producto. image }}" alt="{{ producto.productos }}" class="img-table"></td>
-                          <td>{{ producto.productos }}</td>
-                          <td>{{ producto.marca }}</td>
-                          <td><strong>{{ producto.precio }}</strong></td>
-                          <td class="text-danger">{{ producto.stock }}</td>
-                          <td>{{ producto.vendidos }}</td>
-                          <td>
-                            <a [routerLink]="['/detalle-producto',i]" class="btn btn-outline-secondary btn-sm"><i class="fa fa-eye" aria-hidden="true"></i></a>
-                            <button type="submit" class="btn btn-outline-info btn-sm"><i class="fa fa-pencil" aria-hidden="true"></i></button>
-                            <button type="submit" class="btn btn-outline-info btn-sm"><i class="fa fa-trash" aria-hidden="true"></i></button>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-
+              <div class="row">
+                  <div class="col-md-4">
+                      <div class="card" style="width: 20rem;">
+                        <img class="img-fluid" src="{{producto.image}}" alt="{{producto.productos}}">
+                        <div class="card-block">
+                          <h4 class="card-title">{{producto.productos}}</h4>
+                          <p class="card-text text-primary text-center">{{producto.marca}}</p>
+                          <h3 class="card-text">{{producto.precio}}</h3>
+                          <div class="card-small">
+                            <small> Stock: {{producto.stock}} </small>
+                            <small> Ventas: {{producto.vendidos}} </small>
+                          </div>
+                          <a href="#" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Comprar </a>
+                          <a [routerLink]="['/list-productos']" class="btn btn-secondary"> volver </a>
+                        </div>
+                      </div>
+                  </div>
                 </div>
               </div>
-            </div>
           </section>
 
           <footer class="main-footer">
@@ -124,6 +107,6 @@
               </div>
             </div>
           </footer>
-
         </div>
       </div>
+    </div>

@@ -98,5 +98,9 @@ export class ProductosService {
      return this.productos;
    }
 
+   getProducto( idx: string ){
+    return this.productos[idx];
+  }
+
 
 }
