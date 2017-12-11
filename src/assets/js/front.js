@@ -1,6 +1,4 @@
-/*global $, document, Chart, LINECHART, data, options, window*/
 $(document).ready(function () {
-
     'use strict';
 
     // ------------------------------------------------------- //
@@ -131,6 +129,6 @@ $(document).ready(function () {
         }
 
         return false;
-    });    
+    });
 
-});
+  });

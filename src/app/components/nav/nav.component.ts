@@ -14,7 +14,7 @@ export class NavComponent implements OnInit {
     nombre:"Matias",
     apellido:"Silva",
     rol:"Usuario Web",
-    image:"../../assets/img/avatar-1.jpg"
+    image:"../../assets/img/avatar-2.jpg"
   }
 
   constructor() { }
